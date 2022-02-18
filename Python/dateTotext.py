@@ -28,7 +28,13 @@ digits = { 1:"one",
 
 mmddyyyy = int(input())
 
+number = mmddyyyy
+
 # print(len(mmddyyyy))
 
-while mmddyyyy > 2:
-    
+# print(number% 10)
+
+while number > 12:
+    temp = number % 10
+    number = number // 10
+    print(temp)
