@@ -52,6 +52,15 @@ int main()
 
     for (int z = 0; z < testCase; z++)
     {
+        int n, k;
+        cin >> n >> k;
+        int count = 0;
+
+        while (n > 2)
+        {
+
+            ;
+        }
     }
 
     return 1;
