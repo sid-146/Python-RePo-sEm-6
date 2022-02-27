@@ -41,7 +41,7 @@ In the first example he should call two people. Each of them will take 2 coins a
 In the second example he should call 3 people.
 */
 
-#include <bits/stdc++.h>
+#include <iostream>
 
 using namespace std;
 
@@ -50,18 +50,19 @@ int main()
     int testCase;
     cin >> testCase;
 
-    for (int z = 0; z < testCase; z++)
+    while (testCase--)
     {
-        int n, k;
-        cin >> n >> k;
-        int count = 0;
-
-        while (n > 2)
+        int n, k, rem, max = 0;
+        for (int i = 1; i < k + 1; i++)
         {
-
-            ;
+            rem = n % i;
+            if (rem < max)
+            {
+                max = rem;
+            }
         }
+        cout << max << endl;
     }
 
-    return 1;
+    return 0;
 }
