@@ -6,4 +6,4 @@ for i in range(1, number):
         print(i, "Is Even :", number % 2 == 0)
 
     else:
-        pass
+        print(i, "Is Odd :", number % 2 == 0)
