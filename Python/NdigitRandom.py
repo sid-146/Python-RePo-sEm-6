@@ -2,7 +2,11 @@ import random
 
 
 def randomNdigitNumber(num: int):
-    return random.randint(num, num)
+    if num == 0:
+        return 0
+    else
+        return random.randint(10**(num - 1) 10**(num-1))
+    
 
 
 if __name__ == "__main__":
